@@ -78,7 +78,7 @@
 <body>
   <!-- Entry Screen -->
   <div class="container" id="main-container">
-    <h1 id="title" style="font-weight: bold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black; position: absolute; left: 15%; top: 30px; font-size: 15px;"></h1>
+    <h1 id="title" style="color: black; position: absolute; left: 20px; top: 30px; font-size: 15px;"></h1>
     <div class="nickname-form" id="nickname-form">
       <h1 class="main-heading">Welcome to The Word Search Game!</h1>
       <label class="nickname" for="nickname">Enter Your Nickname:</label>
@@ -107,15 +107,15 @@
 
 
   <div id= "gameScreen" style="display:none;">
-    <div id="gameTable"></div>
-    <div id="sidePanels" style="position: absolute; right: 20px; top: 20px; width: 30%;">
-      <div id="scoreBoard" style="border: 1px solid black; padding: 10px; margin-bottom: 10px;"></div>
-      <div id="wordList" style="border: 1px solid black; padding: 10px; overflow-y: auto; max-height: 300px;"></div>
+    <div id="gameTable" style="position: absolute; left: 40px; top: 40px;"></div>
+    <div id="sidePanels" style="position: absolute; right: 280px; top: 40px; width: 30%;">
+      <div id="scoreBoard" style="border: 3px solid black; padding: 10px; margin-bottom: 10px;"></div>
+      <div id="wordList" style="border: 3px solid black; padding: 10px; overflow-y: auto; max-height: 260px;"></div>
     </div>
 
 
-    <div id="chatBox">
-      <div id="messages" style="height: 200px; overflow-y: scroll; background: #f1f1f1; margin-bottom: 10px;"></div>
+    <div id="chatBox" style="position: absolute; right: 25px; top: 60px;">
+      <div id="messages" style="height: 400px; overflow-y: scroll; background: #f1f1f1; margin-bottom: 10px;"></div>
       <input type="text" id="message" placeholder="Type message here..." style="width: 70%;">
       <button id="sendButton">Send</button>
     </div>

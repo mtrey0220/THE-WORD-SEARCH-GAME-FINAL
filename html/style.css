@@ -191,8 +191,9 @@
 /* Game Screen */
 #gameTable {
   float: left;
-  width: 65%;
+  width: 45%;
 }
+
 #sidePanels {
   position: absolute;
   right: 20px;

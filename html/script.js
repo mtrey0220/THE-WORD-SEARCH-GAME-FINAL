@@ -23,10 +23,6 @@ class UserEvent {
 let start = [-1, -1];
 let end = [-1, -1];
 
-window.onload = function() {
-    getVersion("1.0.0 (EST. 2024)");
-  }
-
 // Function to handle nickname submission
 function handleSubmission() { 
   const nickname = usernameInput.value.trim();
@@ -298,7 +294,7 @@ function chat() {
       U.PlayerIdx = "PLAYER3";
   else if (idx == 3)
       U.PlayerIdx = "PLAYER4";
-  U.GameId = gameid;
+  U.GameId = gameId;
 
   var inputElement = document.getElementById('message');
   var inputValue = inputElement.value;
@@ -454,11 +450,8 @@ socket.send(JSON.stringify(U));
 console.log(JSON.stringify(U));
 }
 
-function getVersion(version) {
-    var head = document.getElementById("title");
-    if (head) {
-      head.innerHTML = version;
-    } else {
-      console.error("Element with ID 'title' not found in the DOM.");
-    }
-  }
+function getVersion(version)
+{
+  head = document.getElementById("title");
+  head.innerHTML = version;
+}
